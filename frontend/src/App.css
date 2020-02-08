@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700i,800,800i&display=swap");
+.App {
+  max-width: 1400px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;
+  color:white;
+  text-shadow: 2px 2px 2px black; 
+
+min-height: 100vh;
+}
+.bingo_info {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.bingo_info > h1 {
+    font-size: 34px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.bingo_info > h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.all_sheets {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+

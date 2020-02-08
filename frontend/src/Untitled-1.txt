@@ -1,0 +1,164 @@
+  // {
+    //   team_name: "bobs burgers",
+    //   team_members: [
+    //     "honkiss",
+    //     "emaw",
+    //     "rangerfain",
+    //     "plen",
+    //     "chlis",
+    //     "jim",
+    //     "bob",
+    //     "dave"
+    //   ],
+    //   tiles: [
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: {
+    //         playername: "Honkito",
+    //         date: new Date().getTime(),
+    //         url: "imgur.com / dicks"
+    //       }
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get dqwd dqwd dqwd qwd qwdqwd qwd qwd asda dsqwdad fgwe aef aeaqwd3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     }
+    //   ]
+    // },
+    // {
+    //   team_name: "bobs burgers2",
+    //   team_members: [
+    //     "honkiss",
+    //     "emaw",
+    //     "rangerfain",
+    //     "plen",
+    //     "chlis",
+    //     "jim",
+    //     "bob",
+    //     "dave"
+    //   ],
+    //   tiles: [
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: {
+    //         playername: "Honkito",
+    //         date: new Date().getTime(),
+    //         url: "imgur.com / dicks"
+    //       }
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     },
+    //     {
+    //       boss_name: "zulrah",
+    //       boss_image:
+    //         "https://oldschool.runescape.wiki/images/thumb/b/bc/Zulrah_%28serpentine%29.png/541px-Zulrah_%28serpentine%29.png",
+    //       tile_challenge: "get 3 unique zulrah drops",
+    //       submission: null
+    //     }
+    //   ]
+    // }

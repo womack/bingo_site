@@ -1,0 +1,34 @@
+.sheet > h1,
+.sheet_contents > h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.team_members {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+}
+.team_members p {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.bingo_sheet {
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.sheet {
+  margin: 10px;
+  text-align: center;
+}
+
+.sheet_contents{
+    margin-top: 20px;
+}
