@@ -3,6 +3,9 @@ import Tile from "./Tile";
 import "./Sheet.css";
 
 const Sheet = ({ data, editable }) => {
+
+
+  if(!data.team_members) return null
   let tilesCompleted = 0;
   data.tiles.forEach(tile => (tile.submission ? tilesCompleted++ : null));
   return (
@@ -22,7 +25,7 @@ const Sheet = ({ data, editable }) => {
       <div className="bingo_sheet">
           
         {data.tiles.map((tile, i) => (
-          <Tile data={tile} key={i} />
+          <Tile data={tile} sheetId={data._id} teamMembers={data.team_members} editable={editable} key={i} />
         ))}
       </div></div>
     </div>
