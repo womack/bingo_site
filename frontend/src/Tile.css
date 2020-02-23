@@ -1,10 +1,9 @@
 .tile {
   width: 100%;
   outline: 1px solid grey;
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   padding: 5px;
-  cursor: pointer;
 }
 .tile img {
   max-width: 100%;
@@ -34,8 +33,9 @@
 .tile > div {
   position: relative;
 }
-.tile:hover {
+.tile_hover:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .checkmark {
@@ -45,11 +45,12 @@
 }
 .submission {
   position: absolute;
-  bottom: 10px;
+  bottom: 2.5px;
 }
 .submission h2 {
-  font-size: 22px;
-  text-decoration: underline;
+  font-size: 20px;
+  color:gold;
+  
 }
 
 .submission_modal {

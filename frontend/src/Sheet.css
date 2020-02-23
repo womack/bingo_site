@@ -4,6 +4,11 @@
   margin-bottom: 10px;
   font-size: 22px;
 }
+.sheet_contents > h2 {
+  font-weight :600;
+  font-size: 20px;
+  color: gold;
+}
 .team_members {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +16,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin:auto;
+  margin: auto;
 }
 .team_members p {
   margin-right: 5px;
@@ -19,16 +24,38 @@
 }
 
 .bingo_sheet {
-  width: 750px;
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
+  justify-content: center;
 }
 .sheet {
+  padding: 5px;
   margin: 10px;
   text-align: center;
+  position: relative;
 }
 
-.sheet_contents{
-    margin-top: 20px;
+.sheet_contents {
+  margin-top: 20px;
+}
+.winning_sheet {
+  box-shadow: 0px 0px 20px 10px gold;
+
+}
+
+.crown,
+.crown_2 {
+  width: 100px;
+  position: absolute;
+  top: 30px;
+}
+.crown {
+  left: 10px;
+  transform: rotate(-30deg);
+}
+.crown_2 {
+  right: 10px;
+  transform: rotate(30deg);
 }

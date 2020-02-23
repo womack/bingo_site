@@ -3,7 +3,7 @@ const express = require("express"),
   restful = require("node-restful"),
   mongoose = restful.mongoose;
 const app = express();
-const cors =require("cors");
+const cors = require("cors");
 
 const sheetModel = require("./models/sheetModel");
 
@@ -17,18 +17,27 @@ mongoose.connect("mongodb://127.0.0.1:27017/VTGSheets", {
   useUnifiedTopology: true
 });
 app.use("/api", require("./routes/api"));
-app.post("/api/addTile", (req, res) => {
-  sheetModel.findOneAndUpdate(
-    { _id: req.body.id },
-    { $push: { tiles: req.body.tile } },
-    { new: true },
-    (err, resp) => {
-      if (err) {
-        return res.send(err);
-      }
-      res.send("Added Successfully");
+
+app.post("/api/addTile", async (req, res) => {
+  const sheets = await sheetModel.find({});
+  for (let i = 0; i < sheets.length; i++) {
+    const sheet = sheets[i];
+    sheet.tiles.push(req.body.tile);
+    await sheet.save();
+  }
+  res.json({ message: "hopefully added tiles" });
+});
+
+app.delete("/api/addTile", async (req, res) => {
+  const sheets = await sheetModel.find({});
+  for (let i = 0; i < sheets.length; i++) {
+    const sheet = sheets[i];
+    if (sheet) {
+      sheet.tiles = sheet.tiles.filter(t => t.boss_name !== req.body.boss_name);
+      await sheet.save();
     }
-  );
+  }
+  res.json({ message: "hopefully removed tiles" });
 });
 
 app.post("/api/addSubmission", async (req, res) => {
@@ -39,12 +48,11 @@ app.post("/api/addSubmission", async (req, res) => {
 
   if (tileIndex !== -1) {
     sheet.tiles[tileIndex].submission = req.body.submission;
-    sheet.tiles[tileIndex].submission.date = new Date().getTime() 
+    sheet.tiles[tileIndex].submission.date = new Date().getTime();
   }
 
   await sheet.save();
-
-  res.send("Submitted");
+  res.json({ message: "Submitted" });
 });
 
 app.listen(5000);

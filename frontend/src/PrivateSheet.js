@@ -10,11 +10,9 @@ const PrivateSheet = () => {
   useEffect(() => {
     (async function iffe() {
       const response = await api.get("sheets/" + id);
-      console.log(response);
       updateSheet(response);
     })();
   }, []);
-  console.log(sheet);
   return (
     <div className="private_sheet">
       <Sheet data={sheet} editable={true} />

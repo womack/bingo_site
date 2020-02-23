@@ -32,6 +32,9 @@ const Tile = ({ sheetId, data, teamMembers, editable }) => {
   );
 
   const submitTile = async () => {
+    if (submissionURL.trim().length < 1) {
+      return alert("Need url");
+    }
     const response = await api.submitTile(sheetId, data.boss_name, {
       url: submissionURL,
       playername: selectedTeamMember
@@ -47,8 +50,11 @@ const Tile = ({ sheetId, data, teamMembers, editable }) => {
   return (
     <>
       <div
-        className="tile"
+        className={`${editable ? "tile_hover" : ""} tile`}
         onClick={editable ? () => updateModalOpen(true) : null}
+        style={
+          !editable ? { width: "120px", height: "120px", padding: " 2px" } : {}
+        }
       >
         <div>
           <img src={data.boss_image} alt="boss" />
@@ -56,7 +62,7 @@ const Tile = ({ sheetId, data, teamMembers, editable }) => {
             <img className="checkmark" src={check} alt="checkmark" />
           ) : null}
           <div className="tile_content">
-            <h1>{data.boss_name}</h1>
+            <h1>{data.boss_name.split("-")[0]}</h1>
             <p>{data.tile_challenge}</p>
           </div>
           {data.submission ? (

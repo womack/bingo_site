@@ -8,18 +8,23 @@ function App() {
 
   useEffect(() => {
     (async function iffe() {
-      const response = await api.get("sheets");
+      let response = await api.get("sheets");
+      response = response.sort((a, b) => {
+        let aTilesCompleted = 0;
+        let bTilesCompleted = 0;
+        a.tiles.forEach(tile => (tile.submission ? aTilesCompleted++ : null));
+        b.tiles.forEach(tile => (tile.submission ? bTilesCompleted++ : null));
+        return bTilesCompleted - aTilesCompleted;
+      });
       updateAllSheets(response);
     })();
   }, []);
 
   return (
     <div>
-      
-
       <div className="all_sheets">
         {allSheets.map((sheet, i) => (
-          <Sheet data={sheet} key={i} editable={false} />
+          <Sheet data={sheet} key={i} editable={false} isWinning={i === 0} />
         ))}
       </div>
     </div>
