@@ -4,6 +4,7 @@ const express = require("express"),
   mongoose = restful.mongoose;
 const app = express();
 const cors = require("cors");
+const path = require("path");
 
 const sheetModel = require("./models/sheetModel");
 
@@ -55,4 +56,6 @@ app.post("/api/addSubmission", async (req, res) => {
   res.json({ message: "Submitted" });
 });
 
+app.use("/", express.static(path.resolve(__dirname + "/build")));
+app.use("*", express.static(path.resolve(__dirname + "/build/index.html")))
 app.listen(5000);
