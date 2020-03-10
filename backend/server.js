@@ -58,4 +58,4 @@ app.post("/api/addSubmission", async (req, res) => {
 
 app.use("/", express.static(path.resolve(__dirname + "/build")));
 app.use("*", express.static(path.resolve(__dirname + "/build/index.html")))
-app.listen(5000);
+app.listen(80);
