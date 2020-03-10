@@ -1,4 +1,4 @@
-const api_url = "http://localhost:80/api";
+const api_url = "/api";
 
 const get = endpoint => {
   return new Promise((resolve, reject) => {
