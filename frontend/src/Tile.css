@@ -5,6 +5,9 @@
   height: 150px;
   padding: 5px;
 }
+.tile_submission {
+  outline: 2px solid green;
+}
 .tile img {
   max-width: 100%;
   max-height: 100%;

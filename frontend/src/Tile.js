@@ -50,7 +50,7 @@ const Tile = ({ sheetId, data, teamMembers, editable }) => {
   return (
     <>
       <div
-        className={`${editable ? "tile_hover" : ""} tile`}
+        className={`${editable ? "tile_hover" : ""} tile ${data.submission ? "tile_submission" :""}`}
         onClick={editable ? () => updateModalOpen(true) : null}
         style={
           !editable ? { width: "120px", height: "120px", padding: " 2px" } : {}
