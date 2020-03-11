@@ -12,7 +12,7 @@
 .team_members {
   display: flex;
   flex-wrap: wrap;
-  width: 250px;
+  width: 300px;
   align-items: center;
   justify-content: center;
   text-align: center;

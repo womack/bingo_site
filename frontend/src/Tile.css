@@ -24,6 +24,11 @@
   position: absolute;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.288);
+  height: 70%;
+  display: FLEX;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 90%;
 }
 .tile > div {
   display: flex;
@@ -52,8 +57,7 @@
 }
 .submission h2 {
   font-size: 20px;
-  color:gold;
-  
+  color: gold;
 }
 
 .submission_modal {
@@ -110,7 +114,8 @@
 .submission_modal input[type="text"] {
   color: white !important;
 }
-.MuiInput-input, .MuiInputLabel-formControl {
+.MuiInput-input,
+.MuiInputLabel-formControl {
   color: white !important;
 }
 .MuiTextField-root {
