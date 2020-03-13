@@ -27,9 +27,6 @@ ReactDOM.render(
     </div>
     <Router>
       <Switch>
-        <Router>
-          <App />
-        </Router>
         <Route exact path="/">
           <App />
         </Route>
