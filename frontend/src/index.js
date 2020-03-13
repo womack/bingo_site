@@ -27,15 +27,15 @@ ReactDOM.render(
     </div>
     <Router>
       <Switch>
-        <Route path="/sheet/:id">
-          <PrivateSheet />
-        </Route>
-        <Route exact path="/">
-          <App />
-        </Route>
         <Router>
           <App />
         </Router>
+        <Route exact path="/">
+          <App />
+        </Route>
+        <Route path="/sheet/:id">
+          <PrivateSheet />
+        </Route>
       </Switch>
     </Router>
   </div>,
